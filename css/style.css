@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    padding:0;
+  font-family: 'Prompt', sans-serif;
+    
+}
+br {
+    display: block;
+    margin-bottom: 2px;
+    font-size:2px;
+    line-height: 2px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.header{
+    background-color:#efefef;
+    width:260px;
+    height: 100vh;
+    box-shadow: 1px 0 200px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position:fixed;
+ }
+
+.logo{
+    margin: 0 25px;
+    width: 200px;
+}
+
+nav{
+  
+   
+}
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin:0;
+    padding: 0;
+    
+}
+
+li{
+    margin:25px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.content{
+    width: 100%;
+    padding: 70 70 70 330;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 26px;
+    margin: 0;
+}
+
+h2{
+    
+    margin: 0;
+    font-size: 15px;
+    font-weight:200;
+}
+
+h3{
+   font-size: 12px;
+    font-weight:300;
+    
+}
+
+h4{
+    margin: 10 0px;
+    font-size: 32px;
+    font-weight:400; 
+    font-family: 'Merriweather', serif;
+}
+
+h5{
+    margin: 20px 30px;
+    
+    font-weight: 300;
+    font-size: 14px;
+}
+
+h6{
+    margin: 0 30px;
+    font-family: 'Merriweather', serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 30px;
+}
+.footer{
+    text-align: center;
+}
+
+.work{
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: row;
+    
+    
+    
+}
+
+.hover08 figure img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover08 figure:hover img {
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
+}
+.holder{
+    height:400px;
+    margin: 20px;
+    width: 540px;
+    display: flex;
+   
+    
+}
+.holder1{
+    height:400px;
+    margin: 20px;
+    width: 540px;
+    display: flex;
+    order:2;
+    
+}
+
+.image{
+    
+    height: 400px;
+    width:500x;
+}
+.image1{
+    
+    height: 400px;
+    width:500x;
+    
+}
+
+.textholder{
+   
+    margin: 40px;
+    padding: 20px;
+    z-index: 2;
+}
+.textholder1{
+   
+    margin: 40px;
+    padding: 20px;
+    
+}
+
+-----***** Button  ****-----
+.buttons {
+  display: flex;
+  flex-direction: row;
+      flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+/*   padding: 2em 0em; */
+}
+
+.btn_container {
+/*  align-items: center;*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: #FFF;
+  padding:  40px 0px;
+  width: 200px;
+}
+
+
+.btn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+  color: #FFF;
+  border: 4px solid #000;
+  box-shadow:0px 0px 0px 1px #000 inset;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.effect01:hover {
+  border: 4px solid #666;
+  background-color: #FFF;
+  box-shadow:0px 0px 0px 4px #EEE inset;
+}
+
+/*btn_text*/
+.effect01 span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.effect01:hover span{
+  letter-spacing: 0.13em;
+  color: #333;
+}
+
+/*highlight*/
+.effect01:after {
+  background: #FFF;
+  border: 0px solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;  
+  opacity: .8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);/*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: #FFF;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+-----***** Button  ****-----
